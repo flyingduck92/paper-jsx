@@ -10,6 +10,18 @@
   padding: 1.875em 9.125em;
 }
 
+.header-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/aurora_bg1.svg');
+  background-size: cover;
+  background-position: 100%;
+}
+
 .header-nav {
   text-transform: uppercase;
   color: #fff;
