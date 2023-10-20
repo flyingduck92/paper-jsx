@@ -1,6 +1,6 @@
 # React + Vite
 
-=[Demo](https://paper-jsx-flyingduck92.vercel.app/)
+#[Demo](https://paper-jsx-flyingduck92.vercel.app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
