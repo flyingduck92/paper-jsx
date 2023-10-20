@@ -1,0 +1,54 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: text;
+  visibility: visible;
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1.25em;
+  overflow: hidden;
+  max-height: fit-content;
+  /* max-width: fit-content; */
+}
+
+.modal .modal-close {
+  display: grid;
+  place-items: center;
+  margin-left: calc(100% - 24px);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal > * {
+  margin: 1em;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.confirmationBg {
+  background: linear-gradient(133deg, #1e79b7 0%, #004575 100%);
+}
+
+/* Animate Slide to Top START */
+.slide {
+  animation: slideToTop 1s ease-in-out;
+}
+
+@keyframes slideToTop {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+/* Animate Slide to Top END */

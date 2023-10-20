@@ -1,0 +1,244 @@
+.payment-form {
+  color: #133f5d;
+  font-size: 1em;
+  position: relative;
+}
+
+.payment-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1.875em;
+}
+
+.payment-form-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 8em;
+}
+
+.payment-form-head {
+  font-weight: 700;
+}
+
+.payment-form-item + .payment-form-head {
+  border-top: 0.3px solid #859cab;
+  padding: 1em 0;
+}
+
+.payment-subtotal,
+.payment-total {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.payment-subtotal {
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 0.75em;
+}
+
+.payment-total {
+  border-top: 0.3px solid #859cab;
+  padding: 0.5em 0;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+.payment-total-price {
+  color: #4195d5;
+}
+
+.payment-detail {
+  background-color: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0px 0px 8px 0px rgba(63, 86, 103, 0.1);
+  padding: 1.25em;
+  width: 18.5em;
+}
+
+.payment-detail-title {
+  margin-top: 1.5em;
+  font-weight: 700;
+}
+
+select.payment-coupon {
+  padding: 1em;
+  width: 100%;
+  border-radius: 0.2em;
+  border: 1px solid #acacac;
+  color: #181820;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+
+  background: url('../assets/icons/arrow-right-sm.svg');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right;
+  background-origin: content-box;
+}
+
+.payment-btn {
+  margin-top: 1.5em;
+  border-radius: 1em;
+  color: #fff;
+  border: 0;
+
+  background-color: #93c854;
+  padding: 0.5em 1.5em;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.payment-btn:disabled,
+.payment-btn[disabled] {
+  background-color: #c2cdd5;
+  cursor: not-allowed;
+}
+
+.radio-info {
+  padding-top: 0.5em;
+}
+
+.radio-info-label {
+  font-size: 0.75em;
+  color: #718c9e;
+}
+.radio-info-value {
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+/* Custom Radio Btn START */
+.custom-radios div.wrapper {
+  display: block;
+  background-color: #fff;
+  max-width: 400px;
+}
+.custom-radios div.wrapper:has(input[type='radio']:checked) {
+  background-color: #f8fbfe;
+  /* background-color: #f8fbfe; */
+}
+.custom-radios input[type='radio'] {
+  display: none;
+}
+.custom-radios input[type='radio'] + label {
+  color: #133f5d;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 0.625em;
+  margin-bottom: 0.625em;
+}
+.custom-radios input[type='radio'] + label .radio-value .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1em;
+  font-size: 0.75em;
+}
+.custom-radios input[type='radio'] + label .radio-image {
+  height: fit-content;
+}
+.custom-radios input[type='radio'] + label .radio-info {
+  display: flex;
+  margin-bottom: 0.35em;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.custom-radios input[type='radio'] + label .radio-info p {
+  margin-bottom: 0.25em;
+  padding: 0.5em 1.5em 0 0;
+}
+
+/* Check Icon Size */
+.custom-radios input[type='radio'] + label .radio-check-icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  text-align: center;
+  line-height: 2.2em;
+  margin: 0.625em;
+}
+.custom-radios input[type='radio'] + label .radio-check-icon img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.custom-radios input[type='radio'] + label .radio-check-icon {
+  background-color: #4195d5;
+}
+
+.custom-radios input[type='radio']:checked + label span img {
+  opacity: 1;
+}
+.custom-radios input[type='radio']:checked + label .radio-info {
+  height: 2.9em;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+/* Custom Radio Btn END */
+
+/* Animate Spinner START */
+.loading-spinner-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8fbfe;
+  opacity: 0.9;
+  width: 105%;
+  height: 105%;
+  border-radius: 0.5em;
+}
+
+.loading-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #718c9e;
+
+  display: grid;
+  place-items: center;
+}
+
+.loading-content p {
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 2em;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-top: 5px solid #4396d0;
+  border-right: 5px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Animate Spinner END*/

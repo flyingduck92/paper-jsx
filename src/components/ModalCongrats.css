@@ -1,0 +1,77 @@
+.congrats-modal {
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.congrats-modal h3,
+.congrats-modal p {
+  line-height: 150%;
+}
+
+.congrats-modal-sect1 {
+  color: #fff;
+  max-width: 29.8125em;
+  margin-bottom: 1.375em;
+}
+
+.congrats-modal-sect1 h3 {
+  font-size: 1.125em;
+}
+
+.congrats-modal-sect2,
+.congrats-modal-sect3 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.25em;
+  margin-top: 0.625em;
+}
+
+.modal-sect2-item:nth-child(odd) {
+  color: #859cab;
+  font-weight: 700;
+}
+
+.modal-sect2-item:nth-child(odd) p:nth-child(even) {
+  color: #133f5d;
+}
+
+.modal-sect2-item:nth-child(even) {
+  color: #859cab;
+}
+
+.modal-sect2-item:nth-child(even) p:nth-child(even) {
+  color: #4c6e84;
+}
+
+.modal-sect3-item {
+  color: #859cab;
+}
+
+.modal-sect3-item:nth-child(even) p:nth-child(even) {
+  color: #4199d5;
+  font-weight: 700;
+}
+
+.modal-sect2-item,
+.modal-sect3-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-sect2-item + .modal-sect2-item {
+  margin-top: 0.875em;
+}
+
+.modal-sect3-item + .modal-sect3-item {
+  margin-top: 0.875em;
+}
+
+.congrats-modal-sect4 button {
+  display: block;
+  width: fit-content;
+  border-radius: 100vh;
+  padding: 0.75em 1.25em;
+  margin: 0 auto;
+  margin-top: 2.625em;
+}

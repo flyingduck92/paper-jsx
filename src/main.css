@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  max-width: 1920px;
+}
+
+a {
+  color: var(--footer-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Interaction info */
+.interaction-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  color: #c2cdd5;
+  animation: bounces 1s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes bounces {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

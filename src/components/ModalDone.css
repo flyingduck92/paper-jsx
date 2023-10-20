@@ -1,0 +1,23 @@
+.done-modal {
+  max-width: 18em;
+  color: #fff;
+  text-align: center;
+}
+
+.done-modal p {
+  color: #b7bcc0;
+  line-height: 150%;
+  font-size: 0.875em;
+}
+
+.done-modal img {
+  margin: 1.5em 3.5625em;
+}
+
+.done-modal button {
+  padding: 0.625em;
+}
+
+.done-modal-sect4 {
+  margin-top: 1.5em;
+}

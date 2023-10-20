@@ -1,0 +1,143 @@
+.registration-details {
+  padding: 3.375em 9.25em;
+}
+
+.registration-details h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1.25em;
+  color: #133f5d;
+}
+
+.registration-col {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+/* Left-col */
+.registration-left-col {
+  padding: 1em;
+}
+
+.registration-left-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5em;
+  cursor: pointer;
+
+  padding: 1em;
+  border-radius: 10px;
+  color: #133f5d;
+}
+.registration-left-item + .registration-left-item {
+  margin-top: 2em;
+}
+
+.left-item-id {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.active {
+  color: #fff;
+  background-color: #4199d5;
+}
+
+/* Right-col */
+.registration-right-col {
+  width: 80vw;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-right-col img {
+  display: block;
+  margin: 0 auto;
+}
+
+.registration-right-col article {
+  transition: all 0.5s;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateY(573px);
+  background-color: #4199d5;
+}
+
+/* pos 1 */
+article.step0.pos0 {
+  transform: translateY(0);
+}
+article.step1.pos0 {
+  transform: translateY(-573px);
+}
+article.step2.pos0 {
+  transform: translateY(-1146px);
+}
+article.step3.pos0 {
+  transform: translateY(-1719px);
+}
+
+/* pos 2 */
+article.step0.pos573 {
+  transform: translateY(0);
+}
+article.step1.pos573 {
+  transform: translateY(-573px);
+}
+article.step2.pos573 {
+  transform: translateY(-1146px);
+}
+article.step3.pos573 {
+  transform: translateY(-1719px);
+}
+
+/* pos 3 */
+article.step0.pos1146 {
+  transform: translateY(0);
+}
+article.step1.pos1146 {
+  transform: translateY(-573px);
+}
+article.step2.pos1146 {
+  transform: translateY(-1146px);
+}
+article.step3.pos1146 {
+  transform: translateY(-1719px);
+}
+
+/* pos 4 */
+article.step0.pos1719 {
+  transform: translateY(0);
+}
+article.step1.pos1719 {
+  transform: translateY(-573px);
+}
+article.step2.pos1719 {
+  transform: translateY(-1146px);
+}
+article.step3.pos1719 {
+  transform: translateY(-1719px);
+}
+
+/* Intersection */
+.title-slide {
+  transform: translate(0, -150%);
+  opacity: 0;
+}
+
+.left-col-slide {
+  transform: translate(-150%, 0);
+  opacity: 0;
+}
+
+.slide-in {
+  transform: translate(0, 0);
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+}

@@ -1,0 +1,135 @@
+:root {
+  --footer-color: #fff;
+  --btn-color: #93C854;
+  --footer-font-size: 0.875em;
+}
+
+footer {
+  background: linear-gradient(125deg, #257AB4 0.44%, #113955 96.26%, #113955 96.27%);
+  padding: 4.25em 9.5%; 
+  color: var(--footer-color);
+  font-weight: 400;
+}
+
+
+/* ----Section 1----- */
+
+.footer-sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125em;
+  padding: 4em 2em;
+}
+
+.footer-sec-1 .img-circle {
+    width: 100%;
+}
+
+.footer-sec-1 h2 {
+  font-size: 2.3em;
+  font-weight: 700;
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.footer-sec-1 button {
+  font-size: 1.125em;
+  font-weight: 400;
+  margin-bottom: 2.3em;
+  color: var(--footer-color);
+  background-color: var(--btn-color);
+  padding: 1em 3em;
+  border-radius: 100vh;
+  border: 0;
+  display: inline;
+  cursor: pointer;
+}
+
+/* ----Section 2----- */
+.footer-sec-2 {
+  display: flex;
+  font-size: var(--footer-font-size);
+  line-height: 185%;
+  padding: 1em 0;
+  border-top: 1px solid var(--footer-color);
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  margin-bottom: .3em;
+}
+
+.contact {
+  display: flex;
+  gap: 1.8125em;
+}
+
+.contact-phone, 
+.contact-email, 
+.contact-address,
+.office-hours-day {
+  display: flex;
+  gap: .5em;
+} 
+
+.footer-sec-2 .right-col {
+  margin-left: auto;
+  display: flex;
+  gap: 2em;
+}
+
+.features-cols {
+  display: flex;
+  gap: 2em;
+}
+
+/* ----Section 3----- */
+.footer-sec-3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  width: 100%;
+  gap: 1.75em;
+  border: 1px solid var(--footer-color);
+  border-left: 0;
+  border-right: 0;
+
+}
+
+.footer-sec-3 .footer-subtitle {
+  margin-bottom: .1em;
+}
+
+.sec-3-secure {
+  display: flex;
+  gap: .75em;
+}
+
+.sec-3-download img,
+.sec-3-secure img {
+  padding: 0.625em 0;
+}
+
+/* ----Section 4----- */
+.footer-sec-4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.socials {
+  display: flex;
+  gap: .3em;
+}
+
+.office-policy {
+  display: flex;
+  gap: 1em;
+}
+
+.copyright {
+  opacity: .6;
+}
