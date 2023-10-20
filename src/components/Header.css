@@ -23,6 +23,7 @@
 }
 
 .header-nav {
+  position: relative;
   text-transform: uppercase;
   color: #fff;
   display: flex;
